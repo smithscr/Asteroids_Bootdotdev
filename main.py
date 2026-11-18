@@ -40,7 +40,7 @@ def main():
                 collision_test = asteroid.collides_with(shot)
                 if collision_test == True:
                     log_event("asteroid_shot")
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
         log_state()
         screen.fill("black")
